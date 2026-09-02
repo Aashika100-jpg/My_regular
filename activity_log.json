@@ -1,7 +1,7 @@
 {
   "start_date": "2026-08-26",
   "total_target_days": 367,
-  "total_commits": 11,
+  "total_commits": 12,
   "history": [
     {
       "day": 1,
@@ -79,6 +79,13 @@
       "timestamp_utc": "2026-09-01 07:28:32 UTC",
       "snippet_title": "Fibonacci Generator",
       "snippet_code": "def fibonacci(n):\n    a, b = 0, 1\n    for _ in range(n):\n        yield a\n        a, b = b, a + b"
+    },
+    {
+      "day": 12,
+      "date": "2026-09-02",
+      "timestamp_utc": "2026-09-02 03:44:31 UTC",
+      "snippet_title": "Two Sum Lookup",
+      "snippet_code": "def two_sum(nums, target):\n    seen = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in seen:\n            return [seen[complement], i]\n        seen[num] = i\n    return []"
     }
   ]
 }
