@@ -1,7 +1,7 @@
 {
   "start_date": "2026-08-26",
   "total_target_days": 367,
-  "total_commits": 75,
+  "total_commits": 76,
   "history": [
     {
       "day": 1,
@@ -527,6 +527,13 @@
       "timestamp_utc": "2026-11-04 05:33:28 UTC",
       "snippet_title": "Factorial Memoization",
       "snippet_code": "memo = {}\ndef factorial(n):\n    if n in (0, 1):\n        return 1\n    if n not in memo:\n        memo[n] = n * factorial(n - 1)\n    return memo[n]"
+    },
+    {
+      "day": 76,
+      "date": "2026-11-05",
+      "timestamp_utc": "2026-11-05 05:53:15 UTC",
+      "snippet_title": "Binary Search",
+      "snippet_code": "def binary_search(arr, target):\n    low, high = 0, len(arr) - 1\n    while low <= high:\n        mid = (low + high) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1"
     }
   ]
 }
